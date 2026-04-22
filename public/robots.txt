@@ -1,0 +1,42 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
+
+
+import React from 'react'
+
+export default function Quiz() {
+  return (
+    <div className='container'>
+        <h1>Quiz Application</h1>
+        <hr />
+        <div className='container'>
+            <h4>Pakistan ka capital?</h4>
+            <input type="radio" value="op1" />&nbspa;Karachi&nbsp;
+            <input type="radio" value="op2" />&nbspa;Islamabad&nbsp;
+            <input type="radio" value="op3" />&nbspa;Lahore&nbsp;
+
+            <h4>HTML full form?</h4>
+            <input type="radio" value="op1" />&nbspa;Hyper Text Market Language&nbsp;
+            <input type="radio" value="op2" />&nbspa;Hyper Test Markup Language&nbsp;
+            <input type="radio" value="op3" />&nbspa;Hyper Text Markup Language&nbsp;
+
+            <h4>2+2=?</h4>
+            <input type="radio" value="op1" />&nbspa;4&nbsp;
+            <input type="radio" value="op2" />&nbspa;3&nbsp;
+            <input type="radio" value="op3" />&nbspa;5&nbsp;
+            <br />
+            <button className='btn btn-warning my-3' onClick={quiz_sum}>Submit</button>
+
+            {/* {
+                flag === true && (
+                    <QuizCard score={score} right={right} wrong={wrong}/>
+                )
+            } */}
+
+
+
+        </div>
+    </div>
+  )
+}
